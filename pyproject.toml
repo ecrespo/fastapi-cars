@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fastapi-cars"
+version = "0.1.0"
+description = ""
+authors = ["Ernesto Crespo <ecrespo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_cars"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.85.0"}
+uvicorn = "^0.18.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
